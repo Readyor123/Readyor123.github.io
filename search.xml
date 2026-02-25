@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>我的二次元测试博客</title>
-    <url>/2026/02/25/%E6%88%91%E7%9A%84%E4%BA%8C%E6%AC%A1%E5%85%83%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>二次元</category>
-      </categories>
-  </entry>
-  <entry>
     <title>我的第一篇博客</title>
     <url>/2026/02/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<h1 id="我的第一篇博客🎇"><a href="#我的第一篇博客🎇" class="headerlink" title="我的第一篇博客🎇"></a>我的第一篇博客🎇</h1><h2 id="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"><a href="#君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！" class="headerlink" title="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"></a>君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！</h2><h2 id="好，把他们上市！"><a href="#好，把他们上市！" class="headerlink" title="好，把他们上市！"></a>好，把他们上市！</h2>]]></content>
@@ -17,20 +9,42 @@
       </tags>
   </entry>
   <entry>
+    <title>我的二次元测试博客</title>
+    <url>/2026/02/25/%E6%88%91%E7%9A%84%E4%BA%8C%E6%AC%A1%E5%85%83%E6%B5%8B%E8%AF%95%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[]]></content>
+      <categories>
+        <category>二次元</category>
+      </categories>
+  </entry>
+  <entry>
     <title>关于我</title>
     <url>/about/index.html</url>
     <content><![CDATA[<h3 id="13年初中生，爱好广泛，超炮厨"><a href="#13年初中生，爱好广泛，超炮厨" class="headerlink" title="13年初中生，爱好广泛，超炮厨"></a>13年初中生，爱好广泛，超炮厨</h3><img src="/images/misaka.gif" width="100" style="float:left; margin-right:15px;">
 ]]></content>
   </entry>
   <entry>
-    <title>搜索</title>
-    <url>/search/index.html</url>
-    <content><![CDATA[]]></content>
-  </entry>
-  <entry>
     <title>分类</title>
     <url>/categories/index.html</url>
     <content><![CDATA[]]></content>
+  </entry>
+  <entry>
+    <title>搜索</title>
+    <url>/search/index.html</url>
+    <content><![CDATA[<!-- 直接嵌入搜索组件，适配所有 Next 版本 -->
+<div style="max-width: 800px; margin: 20px auto; padding: 0 20px;">
+  <input type="text" id="local-search-input" placeholder="输入关键词搜索文章..." style="width: 100%; padding: 12px 15px; border: 1px solid #ddd; border-radius: 4px; font-size: 16px;" />
+  <div id="local-search-result" style="margin-top: 15px; text-align: left;"></div>
+</div>
+
+<!-- 加载 Next 主题自带的搜索 JS（核心，不能删） -->
+<script src="/js/local-search.js"></script>
+<script>
+  // 初始化搜索功能
+  $(document).ready(function() {
+    var path = "/search.xml"; // 指向生成的搜索索引文件
+    localSearch(path);
+  });
+</script>]]></content>
   </entry>
   <entry>
     <title>tags</title>
