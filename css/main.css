@@ -1222,7 +1222,7 @@ pre code {
     vertical-align: middle;
   }
   .links-of-author a::before {
-    background: #00eecd;
+    background: #7cac39;
     display: inline-block;
     margin-right: 3px;
     transform: translateY(-2px);
@@ -1623,7 +1623,7 @@ pre code {
   width: 100%;
 }
 .with-love {
-  color: #f00;
+  color: ;
   display: inline-block;
   margin: 0 5px;
 }
@@ -2727,33 +2727,4 @@ header.header {
   .pagination {
     margin-bottom: 10px;
   }
-}
-.social-links .fa {
-  font-size: 2em !important;
-  height: 2em !important;
-  width: 2em !important;
-  line-height: 2em !important;
-}
-.social-links a {
-  margin: 0 5px !important;
-}
-body {
-  font-family: "Microsoft YaHei", "SimHei", "PingFang SC", Arial, sans-serif !important;
-  font-size: 16px !important;
-  line-height: 1.8 !important;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: "Microsoft YaHei Bold", "SimHei", "PingFang SC", Arial, sans-serif !important;
-  font-weight: 700 !important;
-}
-code,
-pre,
-.highlight {
-  font-family: "Fira Sans", "Consolas", "Monaco", "Courier New", monospace !important;
-  font-size: 14px !important;
 }
