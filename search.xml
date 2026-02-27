@@ -24,9 +24,10 @@
       </tags>
   </entry>
   <entry>
-    <title>分类</title>
-    <url>/categories/index.html</url>
-    <content><![CDATA[]]></content>
+    <title>关于我</title>
+    <url>/about/index.html</url>
+    <content><![CDATA[<h3 id="13年初中生，爱好广泛，超炮厨"><a href="#13年初中生，爱好广泛，超炮厨" class="headerlink" title="13年初中生，爱好广泛，超炮厨"></a>13年初中生，爱好广泛，超炮厨</h3><img src="/images/misaka.gif" width="100" style="float:left; margin-right:15px;">
+]]></content>
   </entry>
   <entry>
     <title>tags</title>
@@ -34,9 +35,8 @@
     <content><![CDATA[]]></content>
   </entry>
   <entry>
-    <title>关于我</title>
-    <url>/about/index.html</url>
-    <content><![CDATA[<h3 id="13年初中生，爱好广泛，超炮厨"><a href="#13年初中生，爱好广泛，超炮厨" class="headerlink" title="13年初中生，爱好广泛，超炮厨"></a>13年初中生，爱好广泛，超炮厨</h3><img src="/images/misaka.gif" width="100" style="float:left; margin-right:15px;">
-]]></content>
+    <title>分类</title>
+    <url>/categories/index.html</url>
+    <content><![CDATA[]]></content>
   </entry>
 </search>
