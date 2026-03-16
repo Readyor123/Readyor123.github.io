@@ -1,6 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>ABC397B</title>
+    <url>/2026/03/16/ABC397B/</url>
+    <content><![CDATA[<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><p>给你一个由<code>i,o</code>组成的字符串，我们想知道最少插入几个字符，就可以使得该串长度为偶数，且奇数位置为<code>i</code>，偶数位置为<code>o</code>。</p>
+<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>我们可以访问这个字符串，每一次访问，该位置的符号应该为<code>ioio</code>交替访问</p>
+<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">char</span> a[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    fst;</span><br><span class="line">    cin&gt;&gt;a<span class="number">+1</span>;</span><br><span class="line">    <span class="type">int</span> n,ans=<span class="number">0</span>;</span><br><span class="line">    n=<span class="built_in">strlen</span>(a<span class="number">+1</span>);</span><br><span class="line">    <span class="type">char</span> c=<span class="string">&#x27;i&#x27;</span>,d=<span class="string">&#x27;o&#x27;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==c)</span><br><span class="line">        &#123;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            ans++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">swap</span>(c,d);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(c==<span class="string">&#x27;o&#x27;</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        ans++;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>编程算法</category>
+      </categories>
+      <tags>
+        <tag>模拟</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>ABC397C</title>
     <url>/2026/03/16/ABC397C/</url>
     <content><![CDATA[<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><p>给你一个序列$a$，我们要将其分成两段，左边一段，右边一段，我们想知道，左边不同元素+右边不同元素之和最大是多少</p>
@@ -12,6 +25,21 @@
       <tags>
         <tag>前后缀</tag>
         <tag>思维</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>ABC396C</title>
+    <url>/2026/03/16/C-%20Buy%20balls/</url>
+    <content><![CDATA[<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><p>有$n$个黑求和$m$个白球，每个球都有价值<br><br>我们要选若干个球，黑球数量要大于等于白球数量，我们希望所有球的价值之和最大，这个最大值是多少？</p>
+<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>提示1：假如我们只关注黑球，我们要选前$x$个，使得总价值最大的话，我们由大到小选择更优，所以我们可以想到从大到小排序<br>提示2：我们有一个暴力思想，选前$x$个黑球，然后选前$j&lt;&#x3D;i$个白球，加起来求和然后求最大即可。但是如果双重循环的话，必然会超时；我们可以考虑枚举前$i$个黑球，然后求$j&lt;&#x3D;i$的白球$s_j$的最大值，也就是$max(t_j)$<br>我们的思路就是摁住黑球数量，比如说前$i$个，那就一定是选前$i$个黑球，此时我们可以选$t_0,t_1,…,t_i$这些白球方案，我们要从中选出$t_j$<br><br>我们的最大价值要么是$0,1,2,…n$个黑球, 白球选$max(t_j)$即可</p>
+<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>; </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">int</span> a[N],b[N];</span><br><span class="line"><span class="type">int</span> s[N],t[N];</span><br><span class="line"><span class="type">int</span> w[N];</span><br><span class="line"><span class="type">int</span> ans;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    fst;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;b[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(a<span class="number">+1</span>,a+n<span class="number">+1</span>,<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">    <span class="built_in">sort</span>(b<span class="number">+1</span>,b+m<span class="number">+1</span>,<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[i]=s[i<span class="number">+1</span>]+a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="built_in">max</span>(m,n);i++)</span><br><span class="line">    &#123;   </span><br><span class="line">        t[i]=t[i<span class="number">+1</span>]+b[i];</span><br><span class="line">        w[i]=<span class="built_in">max</span>(w[i<span class="number">-1</span>],t[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        ans=<span class="built_in">max</span>(ans,s[i]+w[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>编程算法</category>
+      </categories>
+      <tags>
+        <tag>思维</tag>
+        <tag>贪心</tag>
+        <tag>前缀最大</tag>
       </tags>
   </entry>
   <entry>
@@ -45,45 +73,6 @@
       </categories>
       <tags>
         <tag>字符串</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ABC396C</title>
-    <url>/2026/03/16/C-%20Buy%20balls/</url>
-    <content><![CDATA[<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><p>有$n$个黑求和$m$个白球，每个球都有价值<br><br>我们要选若干个球，黑球数量要大于等于白球数量，我们希望所有球的价值之和最大，这个最大值是多少？</p>
-<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>提示1：假如我们只关注黑球，我们要选前$x$个，使得总价值最大的话，我们由大到小选择更优，所以我们可以想到从大到小排序<br>提示2：我们有一个暴力思想，选前$x$个黑球，然后选前$j&lt;&#x3D;i$个白球，加起来求和然后求最大即可。但是如果双重循环的话，必然会超时；我们可以考虑枚举前$i$个黑球，然后求$j&lt;&#x3D;i$的白球$s_j$的最大值，也就是$max(t_j)$<br>我们的思路就是摁住黑球数量，比如说前$i$个，那就一定是选前$i$个黑球，此时我们可以选$t_0,t_1,…,t_i$这些白球方案，我们要从中选出$t_j$<br><br>我们的最大价值要么是$0,1,2,…n$个黑球, 白球选$max(t_j)$即可</p>
-<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>; </span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> n,m;</span><br><span class="line"><span class="type">int</span> a[N],b[N];</span><br><span class="line"><span class="type">int</span> s[N],t[N];</span><br><span class="line"><span class="type">int</span> w[N];</span><br><span class="line"><span class="type">int</span> ans;</span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    fst;</span><br><span class="line">    cin&gt;&gt;n&gt;&gt;m;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=m;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        cin&gt;&gt;b[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="built_in">sort</span>(a<span class="number">+1</span>,a+n<span class="number">+1</span>,<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">    <span class="built_in">sort</span>(b<span class="number">+1</span>,b+m<span class="number">+1</span>,<span class="built_in">greater</span>&lt;<span class="type">int</span>&gt;());</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        s[i]=s[i<span class="number">+1</span>]+a[i];</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=<span class="built_in">max</span>(m,n);i++)</span><br><span class="line">    &#123;   </span><br><span class="line">        t[i]=t[i<span class="number">+1</span>]+b[i];</span><br><span class="line">        w[i]=<span class="built_in">max</span>(w[i<span class="number">-1</span>],t[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;i++)</span><br><span class="line">    &#123;</span><br><span class="line">        ans=<span class="built_in">max</span>(ans,s[i]+w[i]);</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>编程算法</category>
-      </categories>
-      <tags>
-        <tag>思维</tag>
-        <tag>贪心</tag>
-        <tag>前缀最大</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>ABC397B</title>
-    <url>/2026/03/16/ABC397B/</url>
-    <content><![CDATA[<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><p>给你一个由<code>i,o</code>组成的字符串，我们想知道最少插入几个字符，就可以使得该串长度为偶数，且奇数位置为<code>i</code>，偶数位置为<code>o</code>。</p>
-<h2 id="思路："><a href="#思路：" class="headerlink" title="思路："></a>思路：</h2><p>我们可以访问这个字符串，每一次访问，该位置的符号应该为<code>ioio</code>交替访问</p>
-<h2 id="代码："><a href="#代码：" class="headerlink" title="代码："></a>代码：</h2><figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">include</span> <span class="string">&lt;bits/stdc++.h&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> TRACE 1</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> tcout TRACE &amp;&amp; cout</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> fst ios::sync_with_stdio(false); cin.tie(0); cout.tie(0);</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> int long long</span></span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> P = <span class="number">998244353</span>; </span><br><span class="line"><span class="type">const</span> <span class="type">int</span> INF = <span class="number">0x3f3f3f3f3f3f3f3f</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">1e6</span> + <span class="number">10</span>, M = <span class="number">2e6</span> + <span class="number">10</span>; </span><br><span class="line"></span><br><span class="line"><span class="type">char</span> a[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">signed</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line">    fst;</span><br><span class="line">    cin&gt;&gt;a<span class="number">+1</span>;</span><br><span class="line">    <span class="type">int</span> n,ans=<span class="number">0</span>;</span><br><span class="line">    n=<span class="built_in">strlen</span>(a<span class="number">+1</span>);</span><br><span class="line">    <span class="type">char</span> c=<span class="string">&#x27;i&#x27;</span>,d=<span class="string">&#x27;o&#x27;</span>;</span><br><span class="line">    <span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">1</span>;i&lt;=n;)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">if</span>(a[i]==c)</span><br><span class="line">        &#123;</span><br><span class="line">            i++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            ans++;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">swap</span>(c,d);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">if</span>(c==<span class="string">&#x27;o&#x27;</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        ans++;</span><br><span class="line">    &#125;</span><br><span class="line">    cout&lt;&lt;ans;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>编程算法</category>
-      </categories>
-      <tags>
-        <tag>模拟</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2026/02/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="我的第一篇博客🎇"><a href="#我的第一篇博客🎇" class="headerlink" title="我的第一篇博客🎇"></a>我的第一篇博客🎇</h1><h2 id="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"><a href="#君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！" class="headerlink" title="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"></a>君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！</h2><h2 id="好，把他们上市！"><a href="#好，把他们上市！" class="headerlink" title="好，把他们上市！"></a>好，把他们上市！</h2>]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
       </tags>
   </entry>
   <entry>
@@ -133,6 +122,17 @@
       <tags>
         <tag>思维</tag>
         <tag>映射</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>我的第一篇博客</title>
+    <url>/2026/02/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="我的第一篇博客🎇"><a href="#我的第一篇博客🎇" class="headerlink" title="我的第一篇博客🎇"></a>我的第一篇博客🎇</h1><h2 id="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"><a href="#君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！" class="headerlink" title="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"></a>君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！</h2><h2 id="好，把他们上市！"><a href="#好，把他们上市！" class="headerlink" title="好，把他们上市！"></a>好，把他们上市！</h2>]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
       </tags>
   </entry>
 </search>
