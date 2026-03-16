@@ -23,7 +23,8 @@
         <category>编程算法</category>
       </categories>
       <tags>
-        <tag>前后缀、思维</tag>
+        <tag>前后缀</tag>
+        <tag>思维</tag>
       </tags>
   </entry>
   <entry>
@@ -36,7 +37,9 @@
         <category>编程算法</category>
       </categories>
       <tags>
-        <tag>思维、贪心、前缀最大</tag>
+        <tag>思维</tag>
+        <tag>贪心</tag>
+        <tag>前缀最大</tag>
       </tags>
   </entry>
   <entry>
@@ -59,6 +62,17 @@
       </tags>
   </entry>
   <entry>
+    <title>我的第一篇博客</title>
+    <url>/2026/02/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
+    <content><![CDATA[<h1 id="我的第一篇博客🎇"><a href="#我的第一篇博客🎇" class="headerlink" title="我的第一篇博客🎇"></a>我的第一篇博客🎇</h1><h2 id="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"><a href="#君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！" class="headerlink" title="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"></a>君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！</h2><h2 id="好，把他们上市！"><a href="#好，把他们上市！" class="headerlink" title="好，把他们上市！"></a>好，把他们上市！</h2>]]></content>
+      <categories>
+        <category>测试</category>
+      </categories>
+      <tags>
+        <tag>测试</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CF248A Cupboards</title>
     <url>/2026/03/16/CF248A%20Cupboards/</url>
     <content><![CDATA[<h2 id="题意："><a href="#题意：" class="headerlink" title="题意："></a>题意：</h2><p>每个橱柜有两个门：左边的门和右边的门。所有橱柜的左边门都在同一个位置（打开或关闭），同样，所有橱柜的右边门都在同一个位置（打开或关闭）。要让所有左边门处于相同的位置，让所有右边门处于相同的位置（关&#x3D;0，开&#x3D;1）。例如，所有左边门可以关闭，所有右边门可以打开，Karlsson需要一秒钟来打开或关闭一个橱柜的门。他想知道他需要的最小秒数$t$，才能将所有橱柜的门调整到所需的位置，编写一个程序来确定所需的时间$t$。</p>
@@ -68,18 +82,8 @@
         <category>编程算法</category>
       </categories>
       <tags>
-        <tag>数组、思维</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>我的第一篇博客</title>
-    <url>/2026/02/24/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/</url>
-    <content><![CDATA[<h1 id="我的第一篇博客🎇"><a href="#我的第一篇博客🎇" class="headerlink" title="我的第一篇博客🎇"></a>我的第一篇博客🎇</h1><h2 id="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"><a href="#君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！" class="headerlink" title="君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！"></a>君指先跃动の光は、私の一生不変の信仰に、唯私の超電磁砲永世生き！</h2><h2 id="好，把他们上市！"><a href="#好，把他们上市！" class="headerlink" title="好，把他们上市！"></a>好，把他们上市！</h2>]]></content>
-      <categories>
-        <category>测试</category>
-      </categories>
-      <tags>
-        <tag>测试</tag>
+        <tag>思维</tag>
+        <tag>数组</tag>
       </tags>
   </entry>
   <entry>
@@ -115,7 +119,8 @@
         <category>编程算法</category>
       </categories>
       <tags>
-        <tag>思维、映射</tag>
+        <tag>思维</tag>
+        <tag>映射</tag>
       </tags>
   </entry>
   <entry>
